@@ -8,13 +8,13 @@ let userstatus = JSON.parse(localStorage.getItem("cickuserlogin"));
 if(userstatus!==true){
     signuppagelink.setAttribute("href", "signup.html")
 }else{
-    signuppagelink.setAttribute("href", "reguser.html");
+    signuppagelink.setAttribute("href", "/cricbuzz plus/cb_plus.html");
     let div = document.createElement("div");
     let p = document.createElement("p");
     let p2 = document.createElement("p");
     
     let accountlink = document.createElement("a");
-    accountlink.setAttribute("href", "reguser.html")
+    accountlink.setAttribute("href", "/cricbuzz plus/cb_plus.html")
     accountlink.innerText = "My Account";
     p.append(accountlink);
 
